@@ -20,5 +20,5 @@ resource "azurerm_kubernetes_cluster_node_pool" "this" {
   name                  = random_pet.node_pool.id
   kubernetes_cluster_id = azurerm_kubernetes_cluster.this.id
   vm_size               = "Standard_DS2_v2" //Standard_D4s_v3 Standard_DS2_v2
-  node_count            = 10
+  node_count            = 1
 }
